@@ -1,0 +1,121 @@
+@import "fonts.postcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --white: #ffffff;
+    --black: #000000;
+    --primary: #0165d5;
+    --secondary: #7dafe7;
+    --tertiary: #ecf2f8;
+    --background-primary: #ffffff;
+    --background-secondary: #e6eef0;
+    --background-tertiary: #fafafa;
+    --background-quaternary: #fdfdfd;
+    --title: #464646;
+    --page-title: #3d3d3d;
+    --subtitle: #464646;
+    --body: #464646;
+    --label: #464646;
+    --label-header: "#3D3D3D";
+    --disabled: #98a0a6;
+    --input-border: #a4a4a4;
+    --input-scrollbar: #3d3d3d60;
+    --input-image-background: #f1f1f1;
+    --input-misc-background: #afafaf; /* utilizada nos inputs: InputSwitch, InputSlider e InputRangeSlider */
+    --placeholder: rgba(43, 42, 42, 0.7);
+    --error: #e35050;
+    --error-light: #e3505010;
+    --success: #59ce81;
+    --warning: #fdcb69;
+    --info: #e6eef0;
+    --scrollbar-track: #d9d9d9;
+    --skeleton-shine: #fcfcfc;
+    --skeleton-background: #e6eef0;
+    --border-secondary: rgba(49, 73, 200, 0.16);
+  }
+
+  .dark {
+    --background-primary: #292929;
+    --background-secondary: #3d3d3d;
+    --title: #ffffff;
+    --subtitle: #ffffff;
+    --body: #ffffff;
+    --label: #ffffff;
+    --input-border: #ffffff80;
+    --input-scrollbar: #3d3d3d60;
+    --placeholder: #ffffff7a;
+    --scrollbar-track: #292929;
+    --skeleton-shine: #444444;
+    --skeleton-background: #3d3d3d;
+  }
+
+  .company {
+    --primary: #0165d5;
+    --secondary: #7dafe7;
+    --tertiary: #ecf2f8;
+  }
+
+  html {
+    font-size: 90%;
+  }
+
+  @screen sm {
+    html {
+      font-size: 90%;
+    }
+  }
+
+  @screen md {
+    html {
+      font-size: 100%;
+    }
+  }
+
+  @screen xl {
+    html {
+      font-size: 85%;
+    }
+  }
+
+  @screen 2xl {
+    html {
+      font-size: 130%;
+    }
+  }
+
+  body {
+    font-family: Open Sans, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #707070;
+  }
+
+  h1 {
+    @apply font-extrabold font-primary text-7xl;
+  }
+
+  h2 {
+    @apply font-normal font-primary text-5xl;
+  }
+
+  p {
+    @apply font-normal font-primary text-lg;
+  }
+
+  span {
+    @apply font-normal font-primary text-lg;
+  }
+
+  .description {
+    @apply font-normal font-primary text-2xl;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 6px;
+  }
+}
