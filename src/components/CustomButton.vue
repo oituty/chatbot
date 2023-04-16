@@ -19,6 +19,7 @@ const styleBase =
 const buttonVariants: { elevated: string; outlined: string } = {
   elevated:
     "bg-button-primary text-white border-primary hover:border-secondary hover:bg-secondary ",
-  outlined: "bg-transparent hover:text-secondary text-primary border-primary",
+  outlined:
+    "bg-transparent hover:text-secondary hover:border-secondary text-primary border-primary",
 };
 </script>

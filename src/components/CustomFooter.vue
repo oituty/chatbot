@@ -1,5 +1,5 @@
 <template>
-  <div
+  <footer
     class="font-bold grid lg:grid-cols-3 px-4 lg:px-10 gap-4 items-center py-3 w-full h-fit justify-items-center bg-white shadow-inner"
   >
     <span class="col-start-2 font-[300] gap-x-1 flex items-center">
@@ -32,7 +32,7 @@
         </li>
       </ul>
     </div>
-  </div>
+  </footer>
 </template>
 
 <script setup lang="ts">

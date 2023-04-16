@@ -1,7 +1,7 @@
 <template>
   <header
     :class="[
-      'relative font-bold py-6 px-6 flex  h-full transition-all bg-tertiary justify-center items-center',
+      'relative font-bold py-6 px-6 flex  h-full bg-tertiary justify-center items-center',
       chatIsOn ? 'lg:px-4' : 'lg:px-12',
     ]"
   >
