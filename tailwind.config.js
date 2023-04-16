@@ -16,7 +16,7 @@ module.exports = {
       error: "var(--error)",
       success: "var(--success)",
       warning: "var(--warning)",
-      info: "var(--info)",
+      "button-primary": "var(--button-primary)",
     },
     fontFamily: {
       primary: "Open Sans, Helvetica, Arial, sans-serif",
