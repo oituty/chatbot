@@ -4,7 +4,10 @@
       class="h-full min-h-screen grid grid-cols-1 grid-rows-[1fr_auto] w-full justify-between"
     >
       <HomeHeader
-        :class="['min-h-[40rem] lg:min-h-max', chatIsOn ? 'w-1/2' : 'w-full']"
+        :class="[
+          'min-h-[40rem] transition-all lg:min-h-max',
+          chatIsOn ? 'w-1/2' : 'w-full',
+        ]"
       ></HomeHeader>
       <CustomFooter></CustomFooter>
     </div>
