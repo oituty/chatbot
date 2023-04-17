@@ -8,34 +8,25 @@
   :root {
     --white: #ffffff;
     --black: #000000;
-    --primary: #0165d5;
-    --secondary: #7dafe7;
-    --tertiary: #ecf2f8;
+    --primary: #707070;
+    --secondary: #a8a8a8;
+    --tertiary: #e6eef0;
+    --button-primary: #707070;
     --background-primary: #ffffff;
     --background-secondary: #e6eef0;
     --background-tertiary: #fafafa;
     --background-quaternary: #fdfdfd;
     --title: #464646;
-    --page-title: #3d3d3d;
     --subtitle: #464646;
     --body: #464646;
     --label: #464646;
-    --label-header: "#3D3D3D";
     --disabled: #98a0a6;
-    --input-border: #a4a4a4;
-    --input-scrollbar: #3d3d3d60;
-    --input-image-background: #f1f1f1;
-    --input-misc-background: #afafaf; /* utilizada nos inputs: InputSwitch, InputSlider e InputRangeSlider */
     --placeholder: rgba(43, 42, 42, 0.7);
     --error: #e35050;
     --error-light: #e3505010;
     --success: #59ce81;
     --warning: #fdcb69;
     --info: #e6eef0;
-    --scrollbar-track: #d9d9d9;
-    --skeleton-shine: #fcfcfc;
-    --skeleton-background: #e6eef0;
-    --border-secondary: rgba(49, 73, 200, 0.16);
   }
 
   .dark {
@@ -45,22 +36,17 @@
     --subtitle: #ffffff;
     --body: #ffffff;
     --label: #ffffff;
-    --input-border: #ffffff80;
-    --input-scrollbar: #3d3d3d60;
     --placeholder: #ffffff7a;
-    --scrollbar-track: #292929;
-    --skeleton-shine: #444444;
-    --skeleton-background: #3d3d3d;
-  }
-
-  .company {
-    --primary: #0165d5;
-    --secondary: #7dafe7;
-    --tertiary: #ecf2f8;
   }
 
   html {
-    font-size: 90%;
+    font-size: 62.5%;
+  }
+
+  @screen xs {
+    html {
+      font-size: 90%;
+    }
   }
 
   @screen sm {
@@ -77,7 +63,7 @@
 
   @screen xl {
     html {
-      font-size: 85%;
+      font-size: 100%;
     }
   }
 
@@ -87,31 +73,57 @@
     }
   }
 
+  @screen 3xl {
+    html {
+      font-size: 180%;
+    }
+  }
+
+  @screen 6xl {
+    html {
+      font-size: 260%;
+    }
+  }
+
   body {
     font-family: Open Sans, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #707070;
+    color: var(--primary);
   }
 
   h1 {
     @apply font-extrabold font-primary text-7xl;
+    background-color: #292929;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
   }
 
   h2 {
-    @apply font-normal font-primary text-5xl;
+    @apply font-normal text-3xl;
+  }
+
+  h3 {
+    @apply font-extrabold text-base leading-5;
+  }
+
+  h4 {
+    @apply font-extralight text-sm leading-4;
   }
 
   p {
-    @apply font-normal font-primary text-lg;
+    @apply font-normal text-base leading-6;
   }
 
   span {
-    @apply font-normal font-primary text-lg;
+    @apply font-normal font-primary text-xs;
   }
 
-  .description {
-    @apply font-normal font-primary text-2xl;
+  button {
+    @apply font-semibold font-primary text-base;
   }
 
   ::-webkit-scrollbar {

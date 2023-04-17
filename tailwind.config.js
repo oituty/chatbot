@@ -16,7 +16,7 @@ module.exports = {
       error: "var(--error)",
       success: "var(--success)",
       warning: "var(--warning)",
-      info: "var(--info)",
+      "button-primary": "var(--button-primary)",
     },
     fontFamily: {
       primary: "Open Sans, Helvetica, Arial, sans-serif",
@@ -33,6 +33,7 @@ module.exports = {
     },
     extend: {
       screens: {
+        xs: "300px",
         "3xl": "2500px",
         "6xl": "5000px",
       },
