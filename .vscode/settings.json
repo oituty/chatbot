@@ -16,5 +16,6 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "cSpell.words": ["Defaults", "elevated", "outlined", "rounded"]
 }
