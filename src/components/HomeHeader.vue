@@ -60,7 +60,7 @@
       <span
         class="h-1 bg-primary w-full max-w-xl opacity-40 rounded-full"
       ></span>
-      <p class="max-w-sm mx-auto">
+      <p class="max-w-xs mx-auto">
         Here you gonna have answers about me and some jokes
       </p>
 
@@ -104,7 +104,7 @@ const nextMessage = () => {
 
 function toggleChat() {
   if (chatIsOn.value) {
-    router.replace({ path: "/" });
+    console.log("Restart");
 
     return;
   }
