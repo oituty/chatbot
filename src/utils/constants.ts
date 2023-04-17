@@ -3,12 +3,12 @@ export const socialMedias: { label: string; url: string; iconPath: string }[] =
     {
       label: "Linkedin",
       url: "https://www.linkedin.com/in/oituty/",
-      iconPath: "linkedin.svg",
+      iconPath: "linkedin.png",
     },
     {
       label: "Instagram",
       url: "https://www.instagram.com/oituty/",
-      iconPath: "instagram.svg",
+      iconPath: "instagram.png",
     },
     {
       label: "Email",

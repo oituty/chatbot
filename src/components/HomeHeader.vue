@@ -61,7 +61,10 @@
         class="h-1 bg-primary w-full max-w-xl opacity-40 rounded-full"
       ></span>
       <p class="max-w-xs mx-auto">
-        Here you gonna have answers about me and some jokes
+        Here you gonna have answers about me and
+        <span class="cursor-pointer font-normal text-base leading-6"
+          >some jokes</span
+        >
       </p>
 
       <CustomButton
@@ -104,7 +107,7 @@ const nextMessage = () => {
 
 function toggleChat() {
   if (chatIsOn.value) {
-    console.log("Restart");
+    router.replace({ path: "/" });
 
     return;
   }
