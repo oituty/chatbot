@@ -17,7 +17,7 @@
         <li
           v-for="socialMedia in socialMedias"
           :key="socialMedia.label"
-          class="cursor-pointer rounded-sm border-secondary hover:border-primary shadow-inner h-9 w-9 border-[0.063rem]"
+          class="cursor-pointer rounded-sm border-secondary transition-all hover:border-primary shadow-inner h-9 w-9 border-[0.063rem]"
         >
           <a
             :href="socialMedia.url"
