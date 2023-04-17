@@ -2,7 +2,7 @@
   <footer
     class="font-bold grid lg:grid-cols-3 px-4 lg:px-10 gap-4 items-center py-3 w-full h-fit justify-items-center bg-white shadow-inner"
   >
-    <span class="col-start-2 font-[300] gap-x-1 flex items-center">
+    <span class="lg:col-start-2 font-[300] gap-x-1 flex items-center">
       Developed by
       <a
         :href="getSocialMediaByLabel('Linkedin')?.url"
@@ -17,7 +17,7 @@
         <li
           v-for="socialMedia in socialMedias"
           :key="socialMedia.label"
-          class="cursor-pointer rounded-sm border-secondary shadow-inner h-9 w-9 border-[0.063rem]"
+          class="cursor-pointer rounded-sm border-secondary hover:border-primary shadow-inner h-9 w-9 border-[0.063rem]"
         >
           <a
             :href="socialMedia.url"
